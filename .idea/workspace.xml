@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27dca402-1915-4be5-8690-802beffa6d90" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Se116 Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SE116PROJECT/MapReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mymap.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Se116 Project/MapReader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Se116 Project/README.md" afterDir="false" />
+    <list default="true" id="27dca402-1915-4be5-8690-802beffa6d90" name="Changes" comment="I have completed the MapReader class">
+      <change afterPath="$PROJECT_DIR$/SE116PROJECT/src/MapReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Se116 Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Se116 Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SE116PROJECT/MapReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Se116 Project/MapReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Se116 Project/MapReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Se116 Project/README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,24 +40,24 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/SE116PROJECT" value="DenizMapReadingTask" />
+        <entry key="$PROJECT_DIR$/SE116PROJECT" value="DenizMapParser" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/SE116PROJECT" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "denizelmali"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;denizelmali&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/egekutan-byte/SE116PROJECT.git",
-    "accountId": "9408c14e-95f7-4d52-8fb8-a983bea76be0"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/egekutan-byte/SE116PROJECT.git&quot;,
+    &quot;accountId&quot;: &quot;9408c14e-95f7-4d52-8fb8-a983bea76be0&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -83,6 +79,18 @@
     "last_opened_file_path": "C:/Users/xhama/Desktop/Se116 Project"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xhama\Desktop\Se116 Project\SE116PROJECT\src" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-cffe25b9f5b3-intellij.indexing.shared.core-IU-253.28294.334" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="27dca402-1915-4be5-8690-802beffa6d90" name="Changes" comment="" />
@@ -91,6 +99,35 @@
       <option name="presentableId" value="Default" />
       <updated>1779018443680</updated>
     </task>
+    <task id="LOCAL-00001" summary="I have completed the MapReader class">
+      <option name="closed" value="true" />
+      <created>1779024473255</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1779024473255</updated>
+    </task>
+    <task id="LOCAL-00002" summary="I have completed the MapReader class">
+      <option name="closed" value="true" />
+      <created>1779024509511</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779024509511</updated>
+    </task>
+    <task id="LOCAL-00003" summary="I have completed the MapReader class">
+      <option name="closed" value="true" />
+      <created>1779024778428</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1779024778428</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="I have completed the MapReader class" />
+    <option name="LAST_COMMIT_MESSAGE" value="I have completed the MapReader class" />
   </component>
 </project>
