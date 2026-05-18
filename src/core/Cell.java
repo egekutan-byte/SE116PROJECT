@@ -1,6 +1,6 @@
 package core;
 
-public abstract class Cell {
+public abstract class Cell implements Tickable{
     protected int x;//for the x coordinate
     protected int y;//for the y coordinate
     protected char s;
