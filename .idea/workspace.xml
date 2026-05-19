@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27dca402-1915-4be5-8690-802beffa6d90" name="Changes" comment="I have completed the MapReader class">
-      <change afterPath="$PROJECT_DIR$/SE116PROJECT/src/MapReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Se116 Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Se116 Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SE116PROJECT/MapReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Se116 Project/MapReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Se116 Project/MapReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Se116 Project/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MapReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +40,7 @@
         <entry key="$PROJECT_DIR$/SE116PROJECT" value="DenizMapParser" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/SE116PROJECT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -66,19 +63,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.MapReader.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "DenizMapReadingTask",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/xhama/Desktop/Se116 Project"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MapReader.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;DenizMapReader&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/xhama/Desktop/Se116 Project&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\xhama\Desktop\Se116 Project\SE116PROJECT\src" />
@@ -123,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779024778428</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="I have completed the MapReader class">
+      <option name="closed" value="true" />
+      <created>1779034090580</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1779034090580</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
