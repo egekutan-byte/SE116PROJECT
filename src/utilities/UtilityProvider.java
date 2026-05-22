@@ -13,4 +13,10 @@ public abstract class UtilityProvider extends Cell {
 
     abstract void distributeUtility();
 
+    public void decreaseCapacity(){
+        if (capacity > 0){
+            capacity--;
+        }
+    }
+
 }
