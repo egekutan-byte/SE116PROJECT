@@ -11,9 +11,13 @@ public abstract class UtilityProvider extends Cell {
 
     public int getCapacity() {return capacity;}
 
-    public void decreaseCapacity() {
+    public void decreaseCapacity(int amount) {
         if (capacity > 0) {
-            capacity--;
+            this.capacity -= amount;
+
+            if (this.capacity < 0){
+                this.capacity = 0;
+            }
         }
     }
 
@@ -29,7 +33,7 @@ public abstract class UtilityProvider extends Cell {
 
                 if (currentCell instanceof zones.Zone){
                     zones.Zone building = (zones.Zone) currentCell;
-                    building.demandUtility(this);
+                    building.receiveUtility(this);
                 }
             }
         }
