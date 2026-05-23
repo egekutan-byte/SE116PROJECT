@@ -4,7 +4,7 @@ import core.Cell;
 
 public abstract class Zone extends Cell {
     protected int level=0;
-    abstract void calculateOutput();
+    public abstract void calculateOutput();
     protected boolean hasElectricity = false;
     protected boolean hasWater = false;
     protected boolean hasInternet = false;

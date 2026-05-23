@@ -11,5 +11,5 @@ public abstract class Service extends Cell {
 
     public int getRadius() {return radius;}
 
-    abstract void provideService();
+    public abstract void provideService();
 }
