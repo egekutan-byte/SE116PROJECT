@@ -8,6 +8,11 @@ public abstract class Zone extends Cell {
     protected boolean hasElectricity = false;
     protected boolean hasWater = false;
     protected boolean hasInternet = false;
+    protected int demandedElectricity = 0;
+    protected int demandedWater = 0;
+    protected int demandedInternet = 0;
+
+
 
     public Zone(int x, int y) {
         super(x, y);
@@ -15,6 +20,14 @@ public abstract class Zone extends Cell {
 
     public int getLevel() {return level;}
     public void setLevel(int level) {this.level = level;}
+
+    public int getElectricityDemand() {return demandedElectricity;}
+    public int getWaterDemand() {return demandedWater;}
+    public int getInternetDemand() {return demandedInternet;}
+
+
+
+
 
     public void demandUtility(utilities.UtilityProvider provider) {
         if (provider.getCapacity() <= 0) return;
