@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27dca402-1915-4be5-8690-802beffa6d90" name="Changes" comment="I have completed the MapReader class">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="27dca402-1915-4be5-8690-802beffa6d90" name="Changes" comment="I have completed the MapReader class with Cell [][] readMapFile method">
+      <change afterPath="$PROJECT_DIR$/src/UtilityDistributor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MapReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,11 +127,20 @@
       <option name="project" value="LOCAL" />
       <updated>1779034090580</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="I have completed the MapReader class with Cell [][] readMapFile method">
+      <option name="closed" value="true" />
+      <created>1779188726775</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1779188726775</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I have completed the MapReader class" />
-    <option name="LAST_COMMIT_MESSAGE" value="I have completed the MapReader class" />
+    <MESSAGE value="I have completed the MapReader class with Cell [][] readMapFile method" />
+    <option name="LAST_COMMIT_MESSAGE" value="I have completed the MapReader class with Cell [][] readMapFile method" />
   </component>
 </project>
