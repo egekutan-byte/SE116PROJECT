@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27dca402-1915-4be5-8690-802beffa6d90" name="Changes" comment="I have completed the MapReader class with Cell [][] readMapFile method">
-      <change afterPath="$PROJECT_DIR$/src/UtilityDistributor.java" afterDir="false" />
+    <list default="true" id="27dca402-1915-4be5-8690-802beffa6d90" name="Changes" comment="I started the utility distributor class and the foundation of the BFS algorithm was laid.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UtilityDistributor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UtilityDistributor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,12 +135,21 @@
       <option name="project" value="LOCAL" />
       <updated>1779188726775</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="I started the utility distributor class and the foundation of the BFS algorithm was laid.">
+      <option name="closed" value="true" />
+      <created>1779519259915</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1779519259915</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I have completed the MapReader class" />
     <MESSAGE value="I have completed the MapReader class with Cell [][] readMapFile method" />
-    <option name="LAST_COMMIT_MESSAGE" value="I have completed the MapReader class with Cell [][] readMapFile method" />
+    <MESSAGE value="I started the utility distributor class and the foundation of the BFS algorithm was laid." />
+    <option name="LAST_COMMIT_MESSAGE" value="I started the utility distributor class and the foundation of the BFS algorithm was laid." />
   </component>
 </project>

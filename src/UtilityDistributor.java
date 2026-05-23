@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class UtilityDistributor {
-    static class BFSNode{
+    static class BFSNode {
         int row;
         int col;
         int remainingCapacity;
@@ -12,7 +12,8 @@ public class UtilityDistributor {
             this.remainingCapacity = remainingCapacity;
         }
     }
-    public static void distribute(Cell[][] grid, int startRow, int startCol,int initialCapacity) {
+
+    public static void distribute(Cell[][] grid, int startRow, int startCol, int initialCapacity) {
         int rowCount = grid.length;
         int colCount = grid[0].length;
 
@@ -24,15 +25,31 @@ public class UtilityDistributor {
         int[] dRow = {-1, 1, 0, 0};
         int[] dCol = {0, 0, -1, 1};
         while (!queue.isEmpty()) {
-        BFSNode current = queue.poll();
+            BFSNode current = queue.poll();
             for (int i = 0; i < 4; i++) {
                 int newRow = current.row + dRow[i];
                 int newCol = current.col + dCol[i];
-                if (newRow >= 0 && newRow < rowCount && newCol >= 0 && newCol < colCount){
+                if (newRow >= 0 && newRow < rowCount && newCol >= 0 && newCol < colCount) {
                     if (!visited[newRow][newCol]) {
+                        visited[newRow][newCol] = true;
                         Cell neighborCell = grid[newRow][newCol];
+
+                        if (neighborCell instanceof Empty) {
+                            continue;
+                        }
+                        int newCapacity = current.remainingCapacity;
+
+                        if (neighborCell instanceof Zone) {
+                            Zone currentZone = (Zone) neighborCell;
+                            int demand = currentZone.getDemand();
+                            newCapacity = newCapacity - demand;
+                        }
+                        if (newCapacity > 0) {
+                            queue.add(new BFSNode(newRow, newCol, newCapacity));
+                        }
                     }
                 }
+
             }
         }
     }
