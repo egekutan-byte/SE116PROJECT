@@ -14,8 +14,13 @@ public abstract class Zone extends Cell {
     protected int demandedElectricity = 0;
     protected int demandedWater = 0;
     protected int demandedInternet = 0;
+    protected boolean hasSecurity = false;
+    protected boolean hasHealth = false;
+    protected boolean hasEducation = false;
 
-
+    public void setHasSecurity(boolean hasSecurity) {this.hasSecurity = hasSecurity;}
+    public void setHasHealth(boolean hasHealth) {this.hasHealth = hasHealth;}
+    public void setHasEducation(boolean hasEducation) {this.hasEducation = hasEducation;}
 
     public Zone(int x, int y) {
         super(x, y);

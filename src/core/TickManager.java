@@ -19,7 +19,8 @@ public class TickManager {
                 for (int j = 0; j < grid[i].length ; j++) {
                     if(currentTick==0){
                     if(grid[i][j] instanceof Service){
-                        ((Service) grid[i][j]).provideService();
+                        Service targetService=((Service) grid[i][j]);
+                        targetService.provideService(grid);
                     }
                     else if(grid[i][j] instanceof UtilityProvider){
                         ((UtilityProvider) grid[i][j]).distributeUtility(grid);
