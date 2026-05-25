@@ -13,7 +13,7 @@ public class UtilityDistributor {
         }
     }
 
-    public static void distribute(Cell[][] grid, int startRow, int startCol, int initialCapacity) {
+    public static void distribute(Cell[][] grid, int startRow, int startCol, int initialCapacity,String utilityType) {
         int rowCount = grid.length;
         int colCount = grid[0].length;
 
@@ -41,7 +41,19 @@ public class UtilityDistributor {
 
                         if (neighborCell instanceof Zone) {
                             Zone currentZone = (Zone) neighborCell;
-                            int demand = currentZone.getDemand();
+
+                            int demand = 0;
+
+                            if (utilityType.equals("power")) {
+                                demand = currentZone.getElectricityDemand();
+                                currentZone.setHasElectricity(true);
+                            } else if (utilityType.equals("water")) {
+                                demand = currentZone.getWaterDemand();
+                                currentZone.setHasWater(true);
+                            } else if (utilityType.equals("internet")) {
+                                demand = currentZone.getInternetDemand();
+                                currentZone.setHasInternet(true);
+                            }
                             newCapacity = newCapacity - demand;
                         }
                         if (newCapacity > 0) {
