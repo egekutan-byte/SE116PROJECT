@@ -15,25 +15,26 @@ public class    TickManager {
 
     public void nextTick(){
 
-            for (int i = 0; i < grid.length; i++) {
-                for (int j = 0; j < grid[i].length ; j++) {
-                    if(currentTick==0){
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length ; j++) {
+                if(currentTick==0){
                     if(grid[i][j] instanceof Service){
-                        ((Service) grid[i][j]).provideService();
+                        Service targetService=((Service) grid[i][j]);
+                        targetService.provideService();
                     }
                     else if(grid[i][j] instanceof UtilityProvider){
                         ((UtilityProvider) grid[i][j]).distributeUtility(grid);
                     }
-                    }
-                    else{
-                        if(grid[i][j] instanceof Zone){
-                            ((Zone)grid[i][j]).calculateOutput();
-                            ((Zone)grid[i][j]).demandUtility();
-                        }
+                }
+                else{
+                    if(grid[i][j] instanceof Zone){
+                        ((Zone)grid[i][j]).calculateOutput();
+                        ((Zone)grid[i][j]).demandUtility();
                     }
                 }
             }
-            currentTick++;
+        }
+        currentTick++;
             printMap();
     }
 
