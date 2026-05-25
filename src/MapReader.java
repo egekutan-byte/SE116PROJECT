@@ -34,41 +34,41 @@ public class MapReader {
 
                 switch (currentChar) {
                     case 'H':
-                        grid[i][j] = new Housing();
+                        grid[i][j] = new Housing(i,j);
                         break;
                     case 'I':
-                        grid[i][j] = new Industrial();
+                        grid[i][j] = new Industrial(i,j);
                         break;
                     case 'C':
-                        grid[i][j] = new Commercial();
+                        grid[i][j] = new Commercial(i,j);
                         break;
                     case 'W':
-                        grid[i][j] = new WaterStation();
+                        grid[i][j] = new WaterStation(i,j);
                         waterStations.add(grid[i][j]);
                         break;
                     case 'P':
-                        grid[i][j] = new PowerPlant();
+                        grid[i][j] = new PowerPlant(i,j);
                         powerPlants.add(grid[i][j]);
                         break;
                     case 'R':
-                        grid[i][j] = new Road();
+                        grid[i][j] = new Road(i,j);
                         break;
                     case 'T':
-                        grid[i][j] = new InternetHub();
+                        grid[i][j] = new InternetHub(i,j);
                         internetHubs.add(grid[i][j]);
                         break;
                     case 'F':
-                        grid[i][j] = new PoliceStation();
+                        grid[i][j] = new PoliceStation(i,j);
                         break;
                     case 'D':
-                        grid[i][j] = new Hospital();
+                        grid[i][j] = new Hospital(i,j);
                         break;
                     case 'S':
-                        grid[i][j] = new School();
+                        grid[i][j] = new School(i,j);
                         break;
                     case 'E':
                     default:
-                        grid[i][j] = new Empty();
+                        grid[i][j] = new Empty(i,j);
                         break;
                 }
             }
