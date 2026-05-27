@@ -51,7 +51,11 @@ public abstract class Zone extends Cell {
         this.currentLifestyle+=amount;
     }
 
-
+    public void resetUtilities(){
+        this.hasElectricity=false;
+        this.hasWater=false;
+        this.hasInternet=false;
+    }
 
 
 
