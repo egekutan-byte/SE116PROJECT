@@ -6,4 +6,6 @@ public class Empty extends Cell{
         super(x, y);
         this.s='E';
     }
+
+
 }

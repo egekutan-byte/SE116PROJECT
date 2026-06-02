@@ -1,5 +1,20 @@
+import core.Cell;
+import core.Empty;
+import core.Road;
+import services.Hospital;
+import services.PoliceStation;
+import services.School;
+import utilities.InternetHub;
+import utilities.PowerPlant;
+import utilities.WaterPumpingStation;
+import zones.Commercial;
+import zones.Housing;
+import zones.Industrial;
+
 import java.util.*;
 import java.io.*;
+
+
 
 public class MapReader {
     public static Cell[][] readMapFile(String filePath, List<Cell> powerPlants, List<Cell> waterStations, List<Cell> internetHubs) {
@@ -43,7 +58,7 @@ public class MapReader {
                         grid[i][j] = new Commercial(i,j);
                         break;
                     case 'W':
-                        grid[i][j] = new WaterStation(i,j);
+                        grid[i][j] = new WaterPumpingStation(i,j);
                         waterStations.add(grid[i][j]);
                         break;
                     case 'P':

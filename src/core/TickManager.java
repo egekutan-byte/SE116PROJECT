@@ -48,33 +48,10 @@ public class TickManager {
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     private void printMap () {
         System.out.println("\n--- TICK " + currentTick + " ---");
         for (int i = 0; i < grid.length; i++) {
-            for (int j = 0; i < grid[i].length; j++) {
+            for (int j = 0; j < grid[i].length; j++) {
                     System.out.print(grid[i][j].s);
                 }
                 System.out.println();
