@@ -1,6 +1,5 @@
-import core.Cell;
-import core.Empty;
-import core.Road;
+package core;
+
 import services.Hospital;
 import services.PoliceStation;
 import services.School;
@@ -13,6 +12,7 @@ import zones.Industrial;
 
 import java.util.*;
 import java.io.*;
+
 
 
 

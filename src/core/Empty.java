@@ -8,4 +8,8 @@ public class Empty extends Cell{
     }
 
 
+    @Override
+    public void updateStatus() {
+
+    }
 }

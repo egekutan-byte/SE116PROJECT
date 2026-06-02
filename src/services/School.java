@@ -7,6 +7,11 @@ public class School extends Service {
         this.radius=4;
         this.s='S';
     }
+
+    @Override
+    public void updateStatus() {
+
+    }
 }
 
 

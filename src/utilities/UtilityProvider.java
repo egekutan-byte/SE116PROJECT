@@ -1,6 +1,6 @@
 package utilities;
 
-import core.Cell;
+import core.*;
 
 public abstract class UtilityProvider extends Cell {
     protected int capacity=100;
@@ -22,20 +22,12 @@ public abstract class UtilityProvider extends Cell {
     }
 
     public void distributeUtility(core.Cell[][] grid){
-        for (int i = 0; i < grid.length; i++){
-            for (int j = 0; j < grid[i].length; j++){
+        String type = "";
+        if (this instanceof PowerPlant) type = "power";
+        else if (this instanceof WaterPumpingStation) type = "water";
+        else if (this instanceof InternetHub) type = "internet";
 
-                if (this.capacity <= 0){
-                    return;
-                }
 
-                core.Cell currentCell = grid[i][j];
-
-                if (currentCell instanceof zones.Zone){
-                    zones.Zone building = (zones.Zone) currentCell;
-                    building.receiveUtility(this);
-                }
-            }
-        }
+        UtilityDistributor.distribute(grid, this.x, this.y, this.capacity, type);
     }
 }

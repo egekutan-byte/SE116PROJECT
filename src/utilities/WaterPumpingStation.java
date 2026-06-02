@@ -2,10 +2,10 @@ package utilities;
 
 public class WaterPumpingStation extends UtilityProvider {
 
-    public WaterPumpingStation(int x, int y, int capacity) {
+    public WaterPumpingStation(int x, int y) {
         super(x, y);
         this.s = 'W';
-        this.capacity = capacity;
+        this.capacity =100;
     }
 
     @Override

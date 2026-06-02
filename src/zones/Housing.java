@@ -9,39 +9,52 @@ public class Housing extends Zone{
         this.s='H';
     }
 
-    public int getPopulation(){
-        return population;
+    @Override
+    public void demandUtility() {
+
     }
-    public int getLifestyle(){
-        return lifestyle;
+
+    public int getPopulation(){return population;}
+    public int getLifestyle(){return lifestyle;}
+
+    public void updateDemands(int currentOutput){
+        int nextDemand=Math.max(1,currentOutput);
+
+        this.demandedElectricity = nextDemand;
+        this.demandedWater = nextDemand;
+        this.demandedInternet = nextDemand;
     }
 
     @Override
     public void calculateOutput() {
-        int utilityCount = 0;
-        if (this.hasElectricity){
-            utilityCount++;
-        }
-        if (this.hasWater){
-            utilityCount++;
-        }
-        if (this.hasInternet){
-            utilityCount++;
-        }
 
-        if (utilityCount == 0){
+        int m = Math.min(this.receivedElectricity, Math.min(this.receivedWater, this.receivedInternet));
+
+
+        if (m == 0) {
             this.level = 0;
             this.population = 0;
-            this.lifestyle = 0;
-        }else {
-            this.level = utilityCount;
-            this.population = this.level * 5;
-            this.lifestyle = this.level * 10;
+        } else {
+
+            if (this.level == 0 || this.level == 1) {
+                this.population = m;
+            } else if (this.level == 2) {
+                this.population = 2 * m;
+            } else if (this.level == 3) {
+
+                this.population = (2 * m) + this.currentLifestyle;
+            }
         }
 
-        this.hasElectricity = false;
-        this.hasWater = false;
-        this.hasInternet = false;
+
+        this.updateDemands(this.population);
+
+
+        this.resetUtilities();
+        this.receivedElectricity = 0;
+        this.receivedWater = 0;
+        this.receivedInternet = 0;
+
     }
 
     @Override

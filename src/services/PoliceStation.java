@@ -8,5 +8,8 @@ public class PoliceStation extends Service{
         this.s='F';
     }
 
+    @Override
+    public void updateStatus() {
 
+    }
 }

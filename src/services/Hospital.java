@@ -7,4 +7,11 @@ public class Hospital extends Service{
         this.radius=3;
         this.s='D';
     }
+
+    @Override
+    public void updateStatus() {
+
+    }
+
+
 }

@@ -1,3 +1,7 @@
+package core;
+
+import zones.Zone;
+
 import java.util.*;
 
 public class UtilityDistributor {
@@ -46,15 +50,27 @@ public class UtilityDistributor {
 
                             if (utilityType.equals("power")) {
                                 demand = currentZone.getElectricityDemand();
-                                currentZone.setHasElectricity(true);
+                                if (current.remainingCapacity >= demand) {
+                                    currentZone.setHasElectricity(true);
+                                    currentZone.receiveElectricityAmount(demand);
+                                    newCapacity = newCapacity - demand;
+                                }
                             } else if (utilityType.equals("water")) {
                                 demand = currentZone.getWaterDemand();
-                                currentZone.setHasWater(true);
+                                if (current.remainingCapacity >= demand) {
+                                    currentZone.setHasWater(true);
+                                    currentZone.receiveWaterAmount(demand);
+                                    newCapacity = newCapacity - demand;
+                                }
                             } else if (utilityType.equals("internet")) {
                                 demand = currentZone.getInternetDemand();
-                                currentZone.setHasInternet(true);
+                                if (current.remainingCapacity >= demand) {
+                                    currentZone.setHasInternet(true);
+                                    currentZone.receiveInternetAmount(demand);
+                                    newCapacity = newCapacity - demand;
+                                }
                             }
-                            newCapacity = newCapacity - demand;
+
                         }
                         if (newCapacity > 0) {
                             queue.add(new BFSNode(newRow, newCol, newCapacity));
