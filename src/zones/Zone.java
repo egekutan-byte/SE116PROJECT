@@ -26,6 +26,10 @@ public abstract class Zone extends Cell {
     public void setHasHealth(boolean hasHealth) {this.hasHealth = hasHealth;}
     public void setHasEducation(boolean hasEducation) {this.hasEducation = hasEducation;}
 
+    protected int currentPopulation = 0;
+    protected int currentGoods = 0;
+    protected int currentLifestyle = 0;
+
     public Zone(int x, int y) {
         super(x, y);
     }
@@ -37,6 +41,40 @@ public abstract class Zone extends Cell {
     public int getElectricityDemand() {return demandedElectricity;}
     public int getWaterDemand() {return demandedWater;}
     public int getInternetDemand() {return demandedInternet;}
+
+    public void setHasElectricity(boolean hasElectricity){this.hasElectricity=hasElectricity;}
+    public void setHasWater(boolean hasWater){this.hasWater=hasWater;}
+    public void setHasInternet(boolean hasInternet){this.hasInternet=hasInternet;}
+
+    public int getCurrentPopulation() {return currentPopulation;}
+    public int getCurrentGoods() {return currentGoods;}
+    public int getCurrentLifestyle() {return currentLifestyle;}
+
+    public void receivePopulation(int amount){
+            this.currentPopulation+=amount;
+    }
+
+    public void receiveGoods(int amount){
+        this.currentGoods+=amount;
+    }
+
+    public void receiveLifestyle(int amount){
+        this.currentLifestyle+=amount;
+    }
+
+    public void resetUtilities(){
+        this.hasElectricity=false;
+        this.hasWater=false;
+        this.hasInternet=false;
+    }
+
+
+
+
+
+
+
+
 
 
 
