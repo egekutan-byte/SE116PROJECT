@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="27dca402-1915-4be5-8690-802beffa6d90" name="Changes" comment="&#10;Resource pooling and integer division distribution system added.Code adjustments were made together with the team.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/SE116PROJECT" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="DenizMapReader" />
+        <entry key="$PROJECT_DIR$/SE116PROJECT" value="DenizMapParser" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;denizelmali&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/egekutan-byte/SE116PROJECT.git&quot;,
+    &quot;accountId&quot;: &quot;9408c14e-95f7-4d52-8fb8-a983bea76be0&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3DqnPVdaAWoqmjKXBlTlsJ2wxXv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MapReader.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;DenizMapReader&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/xhama/Desktop/Se116 Project&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xhama\Desktop\Se116 Project\SE116PROJECT\src" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-cffe25b9f5b3-intellij.indexing.shared.core-IU-253.28294.334" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27dca402-1915-4be5-8690-802beffa6d90" name="Changes" comment="" />
+      <created>1779018443680</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779018443680</updated>
+    </task>
+    <task id="LOCAL-00001" summary="I have completed the MapReader class">
+      <option name="closed" value="true" />
+      <created>1779024473255</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1779024473255</updated>
+    </task>
+    <task id="LOCAL-00002" summary="I have completed the MapReader class">
+      <option name="closed" value="true" />
+      <created>1779024509511</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779024509511</updated>
+    </task>
+    <task id="LOCAL-00003" summary="I have completed the MapReader class">
+      <option name="closed" value="true" />
+      <created>1779024778428</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1779024778428</updated>
+    </task>
+    <task id="LOCAL-00004" summary="I have completed the MapReader class">
+      <option name="closed" value="true" />
+      <created>1779034090580</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1779034090580</updated>
+    </task>
+    <task id="LOCAL-00005" summary="I have completed the MapReader class with Cell [][] readMapFile method">
+      <option name="closed" value="true" />
+      <created>1779188726775</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1779188726775</updated>
+    </task>
+    <task id="LOCAL-00006" summary="I started the utility distributor class and the foundation of the BFS algorithm was laid.">
+      <option name="closed" value="true" />
+      <created>1779519259915</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1779519259915</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Some improvements have been made. The team was contacted and the code was edited.">
+      <option name="closed" value="true" />
+      <created>1779572511273</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1779572511273</updated>
+    </task>
+    <task id="LOCAL-00008" summary="The codes were corrected by communicating with the team.">
+      <option name="closed" value="true" />
+      <created>1779697158603</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1779697158603</updated>
+    </task>
+    <task id="LOCAL-00009" summary="The codes were corrected by communicating with the team.">
+      <option name="closed" value="true" />
+      <created>1779743245105</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1779743245105</updated>
+    </task>
+    <task id="LOCAL-00010" summary="&#10;Resource pooling and integer division distribution system added.Code adjustments were made together with the team.">
+      <option name="closed" value="true" />
+      <created>1779745062163</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1779745062163</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="I have completed the MapReader class" />
+    <MESSAGE value="I have completed the MapReader class with Cell [][] readMapFile method" />
+    <MESSAGE value="I started the utility distributor class and the foundation of the BFS algorithm was laid." />
+    <MESSAGE value="Some improvements have been made. The team was contacted and the code was edited." />
+    <MESSAGE value="The codes were corrected by communicating with the team." />
+    <MESSAGE value="&#10;Resource pooling and integer division distribution system added.Code adjustments were made together with the team." />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;Resource pooling and integer division distribution system added.Code adjustments were made together with the team." />
+  </component>
+</project>
