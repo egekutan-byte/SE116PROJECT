@@ -63,4 +63,16 @@ public class Industrial extends Zone{
         }
         this.currentDemand = Math.max(1, generatedGoods);
     }
+
+    @Override
+    public void demandUtility() {
+     this.demandedElectricity=currentDemand;
+     this.demandedWater=currentDemand;
+     this.demandedInternet=0;
+    }
+
+    @Override
+    public void updateStatus() {
+        calculateOutput();
+    }
 }
