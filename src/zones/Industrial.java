@@ -1,11 +1,11 @@
 package zones;
 
-public class Industrial extends Zone{
+public class Industrial extends Zone {
     private int goodsProduced = 0;
 
     public Industrial(int x, int y) {
         super(x, y);
-        this.s='I';
+        this.s = 'I';
 
     }
 
@@ -14,7 +14,8 @@ public class Industrial extends Zone{
     }
 
     @Override
-    public void updateStatus() {}
+    public void updateStatus() {
+    }
 
     @Override
     public void calculateOutput() {
@@ -49,12 +50,15 @@ public class Industrial extends Zone{
         this.demandedInternet = nextDemand;
 
         System.out.println("Industrial at (" + this.x + "," + this.y + ") generated " + this.goodsProduced + " goods");
-        if (this.level > oldLevel) System.out.println("Industrial at (" + this.x + "," + this.y + ") levels up from " + oldLevel + " to " + this.level);
-        if (this.level < oldLevel) System.out.println("Industrial at (" + this.x + "," + this.y + ") levels down from " + oldLevel + " to " + this.level);
+        if (this.level > oldLevel)
+            System.out.println("Industrial at (" + this.x + "," + this.y + ") levels up from " + oldLevel + " to " + this.level);
+        if (this.level < oldLevel)
+            System.out.println("Industrial at (" + this.x + "," + this.y + ") levels down from " + oldLevel + " to " + this.level);
 
         this.resetUtilities();
     }
 
     @Override
-    public void demandUtility() {}
+    public void demandUtility() {
+    }
 }

@@ -1,11 +1,11 @@
 package zones;
 
-public class Commercial extends Zone{
+public class Commercial extends Zone {
     private int lifestyleProduced = 0;
 
     public Commercial(int x, int y) {
         super(x, y);
-        this.s='C';
+        this.s = 'C';
     }
 
     public int getLifestyleProduced() {
@@ -13,7 +13,8 @@ public class Commercial extends Zone{
     }
 
     @Override
-    public void updateStatus() {}
+    public void updateStatus() {
+    }
 
     @Override
     public void calculateOutput() {
@@ -37,14 +38,17 @@ public class Commercial extends Zone{
         if (this.level == 0) this.lifestyleProduced = 0;
         else if (this.level == 1) this.lifestyleProduced = m;
         else if (this.level == 2) this.lifestyleProduced = 2 * m;
-        else if (this.level == 3) this.lifestyleProduced = (2 * m) + Math.min(this.currentPopulation, this.currentGoods);
+        else if (this.level == 3)
+            this.lifestyleProduced = (2 * m) + Math.min(this.currentPopulation, this.currentGoods);
         int nextDemand = Math.max(1, this.lifestyleProduced);
         this.demandedElectricity = nextDemand;
         this.demandedWater = nextDemand;
         this.demandedInternet = nextDemand;
         System.out.println("Commercial at (" + this.x + "," + this.y + ") generated " + this.lifestyleProduced + " lifestyle");
-        if (this.level > oldLevel) System.out.println("Commercial at (" + this.x + "," + this.y + ") levels up from " + oldLevel + " to " + this.level);
-        if (this.level < oldLevel) System.out.println("Commercial at (" + this.x + "," + this.y + ") levels down from " + oldLevel + " to " + this.level);
+        if (this.level > oldLevel)
+            System.out.println("Commercial at (" + this.x + "," + this.y + ") levels up from " + oldLevel + " to " + this.level);
+        if (this.level < oldLevel)
+            System.out.println("Commercial at (" + this.x + "," + this.y + ") levels down from " + oldLevel + " to " + this.level);
         this.resetUtilities();
     }
 

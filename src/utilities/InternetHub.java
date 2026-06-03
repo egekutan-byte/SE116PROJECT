@@ -1,11 +1,11 @@
 package utilities;
 
-public class InternetHub extends UtilityProvider{
+public class InternetHub extends UtilityProvider {
 
     public InternetHub(int x, int y) {
         super(x, y);
-        this.s='T';
-        this.capacity=100;
+        this.s = 'T';
+        this.capacity = 100;
     }
 
     @Override

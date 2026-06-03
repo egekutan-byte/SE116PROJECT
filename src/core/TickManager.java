@@ -42,12 +42,10 @@ public class TickManager {
             for (int j = 0; j < grid[i].length; j++) {
                 if (grid[i][j] instanceof Industrial) {
                     workplaces.add((Zone) grid[i][j]);
-                }
-                else if (grid[i][j] instanceof Commercial){
+                } else if (grid[i][j] instanceof Commercial) {
                     workplaces.add((Zone) grid[i][j]);
                     commercialZones.add((Zone) grid[i][j]);
-                }
-                else if (grid[i][j] instanceof Housing){
+                } else if (grid[i][j] instanceof Housing) {
                     housingZones.add((Zone) grid[i][j]);
                 }
             }
@@ -57,10 +55,10 @@ public class TickManager {
         cityPool.distributeGoods(commercialZones);
         cityPool.distributeLifestyle(housingZones);
 
-        for (int i = 0; i <grid.length ; i++) {
-            for (int j = 0; j < grid[i].length ; j++) {
-                if(grid[i][j] instanceof Zone){
-                    Zone zone=(Zone) grid[i][j];
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                if (grid[i][j] instanceof Zone) {
+                    Zone zone = (Zone) grid[i][j];
                     zone.calculateOutput();
                     zone.demandUtility();
 

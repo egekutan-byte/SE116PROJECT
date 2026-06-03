@@ -1,6 +1,6 @@
 package core;
 
-public abstract class Cell implements Tickable{
+public abstract class Cell implements Tickable {
     protected int x;//for the x coordinate
     protected int y;//for the y coordinate
     protected char s;
@@ -10,9 +10,17 @@ public abstract class Cell implements Tickable{
         this.y = y;
     }
 
-    public int getX() {return x;}
-    public int getY() {return y;}
-    public char getS() {return s;}
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public char getS() {
+        return s;
+    }
 
 
 }

@@ -1,12 +1,12 @@
 package zones;
 
-public class Housing extends Zone{
+public class Housing extends Zone {
     private int population = 0;
     private int lifestyle = 0;
 
     public Housing(int x, int y) {
         super(x, y);
-        this.s='H';
+        this.s = 'H';
     }
 
     @Override
@@ -14,11 +14,16 @@ public class Housing extends Zone{
 
     }
 
-    public int getPopulation(){return population;}
-    public int getLifestyle(){return lifestyle;}
+    public int getPopulation() {
+        return population;
+    }
 
-    public void updateDemands(int currentOutput){
-        int nextDemand=Math.max(1,currentOutput);
+    public int getLifestyle() {
+        return lifestyle;
+    }
+
+    public void updateDemands(int currentOutput) {
+        int nextDemand = Math.max(1, currentOutput);
 
         this.demandedElectricity = nextDemand;
         this.demandedWater = nextDemand;
@@ -51,8 +56,10 @@ public class Housing extends Zone{
         else if (this.level == 3) this.population = (2 * m) + this.currentLifestyle;
         this.updateDemands(this.population);
         System.out.println("House at (" + this.x + "," + this.y + ") generated " + this.population + " population");
-        if (this.level > oldLevel) System.out.println("House at (" + this.x + "," + this.y + ") levels up from " + oldLevel + " to " + this.level);
-        if (this.level < oldLevel) System.out.println("House at (" + this.x + "," + this.y + ") levels down from " + oldLevel + " to " + this.level);
+        if (this.level > oldLevel)
+            System.out.println("House at (" + this.x + "," + this.y + ") levels up from " + oldLevel + " to " + this.level);
+        if (this.level < oldLevel)
+            System.out.println("House at (" + this.x + "," + this.y + ") levels down from " + oldLevel + " to " + this.level);
         this.resetUtilities();
     }
 

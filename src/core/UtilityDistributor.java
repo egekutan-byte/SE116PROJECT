@@ -18,7 +18,7 @@ public class UtilityDistributor {
         }
     }
 
-    public static void distribute(Cell[][] grid, int startRow, int startCol, int initialCapacity,String utilityType) {
+    public static void distribute(Cell[][] grid, int startRow, int startCol, int initialCapacity, String utilityType) {
         int rowCount = grid.length;
         int colCount = grid[0].length;
 

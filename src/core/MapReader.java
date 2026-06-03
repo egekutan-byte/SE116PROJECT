@@ -14,8 +14,6 @@ import java.util.*;
 import java.io.*;
 
 
-
-
 public class MapReader {
     public static Cell[][] readMapFile(String filePath, List<Cell> powerPlants, List<Cell> waterStations, List<Cell> internetHubs) {
         List<String> lines = new ArrayList<>();
@@ -49,41 +47,41 @@ public class MapReader {
 
                 switch (currentChar) {
                     case 'H':
-                        grid[i][j] = new Housing(i,j);
+                        grid[i][j] = new Housing(i, j);
                         break;
                     case 'I':
-                        grid[i][j] = new Industrial(i,j);
+                        grid[i][j] = new Industrial(i, j);
                         break;
                     case 'C':
-                        grid[i][j] = new Commercial(i,j);
+                        grid[i][j] = new Commercial(i, j);
                         break;
                     case 'W':
-                        grid[i][j] = new WaterPumpingStation(i,j);
+                        grid[i][j] = new WaterPumpingStation(i, j);
                         waterStations.add(grid[i][j]);
                         break;
                     case 'P':
-                        grid[i][j] = new PowerPlant(i,j);
+                        grid[i][j] = new PowerPlant(i, j);
                         powerPlants.add(grid[i][j]);
                         break;
                     case 'R':
-                        grid[i][j] = new Road(i,j);
+                        grid[i][j] = new Road(i, j);
                         break;
                     case 'T':
-                        grid[i][j] = new InternetHub(i,j);
+                        grid[i][j] = new InternetHub(i, j);
                         internetHubs.add(grid[i][j]);
                         break;
                     case 'F':
-                        grid[i][j] = new PoliceStation(i,j);
+                        grid[i][j] = new PoliceStation(i, j);
                         break;
                     case 'D':
-                        grid[i][j] = new Hospital(i,j);
+                        grid[i][j] = new Hospital(i, j);
                         break;
                     case 'S':
-                        grid[i][j] = new School(i,j);
+                        grid[i][j] = new School(i, j);
                         break;
                     case 'E':
                     default:
-                        grid[i][j] = new Empty(i,j);
+                        grid[i][j] = new Empty(i, j);
                         break;
                 }
             }
@@ -109,4 +107,4 @@ public class MapReader {
             System.out.println("----------------------------------------");
         }
     }
-    }
+}

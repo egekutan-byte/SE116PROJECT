@@ -3,9 +3,12 @@ package zones;
 import core.Cell;
 
 public abstract class Zone extends Cell {
-    protected int level=0;
+    protected int level = 0;
+
     public abstract void calculateOutput();
+
     public abstract void demandUtility();
+
     protected int currentDemand = 1;
 
     protected boolean hasElectricity = false;
@@ -28,46 +31,83 @@ public abstract class Zone extends Cell {
     protected boolean hasHealth = false;
     protected boolean hasEducation = false;
 
-    public void setHasSecurity(boolean hasSecurity) { this.hasSecurity = hasSecurity; }
-    public void setHasHealth(boolean hasHealth) { this.hasHealth = hasHealth; }
-    public void setHasEducation(boolean hasEducation) { this.hasEducation = hasEducation; }
+    public void setHasSecurity(boolean hasSecurity) {
+        this.hasSecurity = hasSecurity;
+    }
+
+    public void setHasHealth(boolean hasHealth) {
+        this.hasHealth = hasHealth;
+    }
+
+    public void setHasEducation(boolean hasEducation) {
+        this.hasEducation = hasEducation;
+    }
 
     public Zone(int x, int y) {
         super(x, y);
     }
 
-    public int getLevel() {return level;}
-    public void setLevel(int level) {this.level = level;}
-
-
-    public int getElectricityDemand() {return demandedElectricity;}
-    public int getWaterDemand() {return demandedWater;}
-    public int getInternetDemand() {return demandedInternet;}
-
-    public void setHasElectricity(boolean hasElectricity){this.hasElectricity=hasElectricity;}
-    public void setHasWater(boolean hasWater){this.hasWater=hasWater;}
-    public void setHasInternet(boolean hasInternet){this.hasInternet=hasInternet;}
-
-    public int getCurrentPopulation() {return currentPopulation;}
-    public int getCurrentGoods() {return currentGoods;}
-    public int getCurrentLifestyle() {return currentLifestyle;}
-
-    public void receivePopulation(int amount){
-            this.currentPopulation+=amount;
+    public int getLevel() {
+        return level;
     }
 
-    public void receiveGoods(int amount){
-        this.currentGoods+=amount;
+    public void setLevel(int level) {
+        this.level = level;
     }
 
-    public void receiveLifestyle(int amount){
-        this.currentLifestyle+=amount;
+
+    public int getElectricityDemand() {
+        return demandedElectricity;
     }
 
-    public void resetUtilities(){
-        this.hasElectricity=false;
-        this.hasWater=false;
-        this.hasInternet=false;
+    public int getWaterDemand() {
+        return demandedWater;
+    }
+
+    public int getInternetDemand() {
+        return demandedInternet;
+    }
+
+    public void setHasElectricity(boolean hasElectricity) {
+        this.hasElectricity = hasElectricity;
+    }
+
+    public void setHasWater(boolean hasWater) {
+        this.hasWater = hasWater;
+    }
+
+    public void setHasInternet(boolean hasInternet) {
+        this.hasInternet = hasInternet;
+    }
+
+    public int getCurrentPopulation() {
+        return currentPopulation;
+    }
+
+    public int getCurrentGoods() {
+        return currentGoods;
+    }
+
+    public int getCurrentLifestyle() {
+        return currentLifestyle;
+    }
+
+    public void receivePopulation(int amount) {
+        this.currentPopulation += amount;
+    }
+
+    public void receiveGoods(int amount) {
+        this.currentGoods += amount;
+    }
+
+    public void receiveLifestyle(int amount) {
+        this.currentLifestyle += amount;
+    }
+
+    public void resetUtilities() {
+        this.hasElectricity = false;
+        this.hasWater = false;
+        this.hasInternet = false;
         this.receivedElectricity = 0;
         this.receivedWater = 0;
         this.receivedInternet = 0;
@@ -87,15 +127,6 @@ public abstract class Zone extends Cell {
     public void receiveInternetAmount(int amount) {
         this.receivedInternet += amount;
     }
-
-
-
-
-
-
-
-
-
 
 
     public void receiveUtility(utilities.UtilityProvider provider) {

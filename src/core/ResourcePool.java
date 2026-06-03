@@ -16,6 +16,7 @@ public class ResourcePool {
         this.goods = goods;
         this.lifestyle = lifestyle;
     }
+
     public void addPopulation(int amount) {
         this.population += amount;
     }
@@ -28,9 +29,9 @@ public class ResourcePool {
         this.lifestyle += amount;
     }
 
-    public void distributePopulation(List <Zone> targetZones){
+    public void distributePopulation(List<Zone> targetZones) {
         if (targetZones == null || targetZones.isEmpty()) return;
-        int amountPerZone= this.population / targetZones.size();
+        int amountPerZone = this.population / targetZones.size();
         for (Zone zone : targetZones) {
             zone.receivePopulation(amountPerZone);
 
@@ -45,17 +46,19 @@ public class ResourcePool {
 
             System.out.println(zoneName + " at (" + zone.getX() + "," + zone.getY() + ") received " + amountPerZone + " population");
         }
-        this.population=this.population % targetZones.size();
+        this.population = this.population % targetZones.size();
     }
-    public void distributeGoods(List <Zone> targetZones){
+
+    public void distributeGoods(List<Zone> targetZones) {
         if (targetZones == null || targetZones.isEmpty()) return;
         int amountPerZone = this.goods / targetZones.size();
-        for (Zone zone : targetZones){
+        for (Zone zone : targetZones) {
             zone.receiveGoods(amountPerZone);
         }
         this.goods = this.goods % targetZones.size();
     }
-    public void distributeLifestyle(List<Zone> targetZones){
+
+    public void distributeLifestyle(List<Zone> targetZones) {
         if (targetZones == null || targetZones.isEmpty()) return;
         int amountPerZone = this.lifestyle / targetZones.size();
         for (Zone zone : targetZones) {
@@ -63,8 +66,17 @@ public class ResourcePool {
         }
         this.lifestyle = this.lifestyle % targetZones.size();
     }
-    public int getPopulation() {return population;}
-    public int getGoods() {return goods;}
-    public int getLifestyle() {return lifestyle;}
+
+    public int getPopulation() {
+        return population;
+    }
+
+    public int getGoods() {
+        return goods;
+    }
+
+    public int getLifestyle() {
+        return lifestyle;
+    }
 
 }

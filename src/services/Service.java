@@ -10,9 +10,11 @@ public abstract class Service extends Cell {
         super(x, y);
     }
 
-    public int getRadius() {return radius;}
+    public int getRadius() {
+        return radius;
+    }
 
-    public void provideService(core.Cell[][] grid){
+    public void provideService(core.Cell[][] grid) {
         int rowCount = grid.length;
         int colCount = grid[0].length;
 
@@ -42,13 +44,13 @@ public abstract class Service extends Cell {
                         }
                         if (this instanceof PoliceStation) {
                             targetZone.setHasSecurity(true);
-                            serviceName="security";
+                            serviceName = "security";
                         } else if (this instanceof Hospital) {
                             targetZone.setHasHealth(true);
-                            serviceName="health";
+                            serviceName = "health";
                         } else if (this instanceof School) {
                             targetZone.setHasEducation(true);
-                            serviceName="education";
+                            serviceName = "education";
                         }
                         System.out.println(zoneName + " at (" + targetZone.getX() + "," + targetZone.getY() + ") received " + serviceName + " service");
                     }
