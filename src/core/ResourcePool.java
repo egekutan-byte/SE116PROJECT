@@ -1,5 +1,9 @@
+package core;
+
 import java.util.*;
-import zones.Zone;
+
+
+import zones.*;
 
 public class ResourcePool {
 
@@ -29,6 +33,17 @@ public class ResourcePool {
         int amountPerZone= this.population / targetZones.size();
         for (Zone zone : targetZones) {
             zone.receivePopulation(amountPerZone);
+
+            String zoneName = "";
+            if (zone instanceof Housing) {
+                zoneName = "House";
+            } else if (zone instanceof Commercial) {
+                zoneName = "Commercial";
+            } else if (zone instanceof Industrial) {
+                zoneName = "Industrial";
+            }
+
+            System.out.println(zoneName + " at (" + zone.getX() + "," + zone.getY() + ") received " + amountPerZone + " population");
         }
         this.population=this.population % targetZones.size();
     }

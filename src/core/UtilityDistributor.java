@@ -1,6 +1,7 @@
 package core;
 
-import zones.Zone;
+
+import zones.*;
 
 import java.util.*;
 
@@ -45,15 +46,22 @@ public class UtilityDistributor {
 
                         if (neighborCell instanceof Zone) {
                             Zone currentZone = (Zone) neighborCell;
-
+                            String zoneName = "";
                             int demand = 0;
-
+                            if (currentZone instanceof Housing) {
+                                zoneName = "House";
+                            } else if (currentZone instanceof Commercial) {
+                                zoneName = "Commercial";
+                            } else if (currentZone instanceof Industrial) {
+                                zoneName = "Industrial";
+                            }
                             if (utilityType.equals("power")) {
                                 demand = currentZone.getElectricityDemand();
                                 if (current.remainingCapacity >= demand) {
                                     currentZone.setHasElectricity(true);
                                     currentZone.receiveElectricityAmount(demand);
                                     newCapacity = newCapacity - demand;
+                                    System.out.println(zoneName + " at (" + currentZone.getX() + "," + currentZone.getY() + ") received " + demand + " electricity");
                                 }
                             } else if (utilityType.equals("water")) {
                                 demand = currentZone.getWaterDemand();
@@ -61,6 +69,7 @@ public class UtilityDistributor {
                                     currentZone.setHasWater(true);
                                     currentZone.receiveWaterAmount(demand);
                                     newCapacity = newCapacity - demand;
+                                    System.out.println(zoneName + " at (" + currentZone.getX() + "," + currentZone.getY() + ") received " + demand + " water");
                                 }
                             } else if (utilityType.equals("internet")) {
                                 demand = currentZone.getInternetDemand();
@@ -68,6 +77,7 @@ public class UtilityDistributor {
                                     currentZone.setHasInternet(true);
                                     currentZone.receiveInternetAmount(demand);
                                     newCapacity = newCapacity - demand;
+                                    System.out.println(zoneName + " at (" + currentZone.getX() + "," + currentZone.getY() + ") received " + demand + " internet");
                                 }
                             }
 

@@ -11,9 +11,9 @@ public abstract class Zone extends Cell {
     protected boolean hasElectricity = false;
     protected boolean hasWater = false;
     protected boolean hasInternet = false;
-    protected int demandedElectricity = 0;
-    protected int demandedWater = 0;
-    protected int demandedInternet = 0;
+    protected int demandedElectricity = 1;
+    protected int demandedWater = 1;
+    protected int demandedInternet = 1;
 
     protected int currentPopulation = 0;
     protected int currentGoods = 0;

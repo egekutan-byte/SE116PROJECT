@@ -27,34 +27,33 @@ public class Housing extends Zone{
 
     @Override
     public void calculateOutput() {
-
+        int oldLevel = this.level;
         int m = Math.min(this.receivedElectricity, Math.min(this.receivedWater, this.receivedInternet));
 
-
-        if (m == 0) {
-            this.level = 0;
-            this.population = 0;
-        } else {
-
-            if (this.level == 0 || this.level == 1) {
-                this.population = m;
-            } else if (this.level == 2) {
-                this.population = 2 * m;
-            } else if (this.level == 3) {
-
-                this.population = (2 * m) + this.currentLifestyle;
+        int targetLevel = 0;
+        if (this.receivedElectricity > 0 && this.receivedWater > 0 && this.receivedInternet > 0) {
+            targetLevel = 1;
+            if (this.hasSecurity && this.hasHealth && this.hasEducation) {
+                targetLevel = 2;
+                if (this.currentLifestyle > 0) targetLevel = 3;
             }
         }
-
-
+        if (m == 0) {
+            this.level = 0;
+        } else if (targetLevel > this.level) {
+            this.level++;
+        } else if (targetLevel < this.level) {
+            this.level--;
+        }
+        if (this.level == 0) this.population = 0;
+        else if (this.level == 1) this.population = m;
+        else if (this.level == 2) this.population = 2 * m;
+        else if (this.level == 3) this.population = (2 * m) + this.currentLifestyle;
         this.updateDemands(this.population);
-
-
+        System.out.println("House at (" + this.x + "," + this.y + ") generated " + this.population + " population");
+        if (this.level > oldLevel) System.out.println("House at (" + this.x + "," + this.y + ") levels up from " + oldLevel + " to " + this.level);
+        if (this.level < oldLevel) System.out.println("House at (" + this.x + "," + this.y + ") levels down from " + oldLevel + " to " + this.level);
         this.resetUtilities();
-        this.receivedElectricity = 0;
-        this.receivedWater = 0;
-        this.receivedInternet = 0;
-
     }
 
     @Override
