@@ -34,7 +34,7 @@ public abstract class Service extends Cell {
                         String zoneName = "";
                         String serviceName = "";
 
-                        // Binanın tipini tamamen düz if-else ile buluyoruz
+                        
                         if (targetZone instanceof Housing) {
                             zoneName = "House";
                         } else if (targetZone instanceof Commercial) {
